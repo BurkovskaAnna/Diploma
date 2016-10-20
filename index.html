@@ -14,53 +14,56 @@
 <body>
 	<div class="wrap">
 
+	<button class="toggle-mnu" id="toggle">
+		<span class="sandwich">
+			<span class="sw__topper"></span>
+			<span class="sw__bottom"></span>
+			<span class="sw__footer"></span>
+		</span>
+	</button>
+	<nav class="top-mnu">
+		<ul>
+			<li>
+				<a href="#home" class="_mPS2id-h mPS2id-clicked fadeInUp wow">
+								Home
+				</a>
+			</li>
+			<li>
+				<a href="#home" class="_mPS2id-h adeInUp wow">
+					Our projects
+				</a>
+			</li>
+			<li>
+				<a href="#home" class="_mPS2id-h adeInUp wow">
+					Our teams
+				</a>
+			</li>
+			<li>
+				<a href="#home" class="_mPS2id-h adeInUp wow">
+					Our blog
+				</a>
+			</li>
+			<li>
+				<a href="#home" class="_mPS2id-h adeInUp wow">
+					Contact
+				</a>
+			</li>
+		</ul>
+	</nav>
+
 	<section class="main-header">
 
 		<div class="container"> 
 
 			<header>
 				<img class="logo" src="img/logo.png" alt="logo">
-				<button class="toggle-mnu" id="toggle">
-					<span class="sandwich">
-						<span class="sw__topper"></span>
-						<span class="sw__bottom"></span>
-						<span class="sw__footer"></span>
-					</span>
-				</button>
-				<nav class="top-mnu">
-					<ul>
-						<li>
-							<a href="#home" class="_mPS2id-h mPS2id-clicked fadeInUp wow">
-								Home
-							</a>
-						</li>
-						<li>
-							<a href="#home" class="_mPS2id-h adeInUp wow">
-								Our projects
-							</a>
-						</li>
-						<li>
-							<a href="#home" class="_mPS2id-h adeInUp wow">
-								Our teams
-							</a>
-						</li>
-						<li>
-							<a href="#home" class="_mPS2id-h adeInUp wow">
-								Our blog
-							</a>
-						</li>
-						<li>
-							<a href="#home" class="_mPS2id-h adeInUp wow">
-								Contact
-							</a>
-						</li>
-					</ul>
-				</nav>
 			</header>
 
 			<ul class="slider">
 				<li class="slider__item">
+					
 					<h2>
+						<strong>01</strong>
 						WE LOVE<br>GARDENING
 					</h2>
 					<p>
@@ -75,6 +78,7 @@
 				</li>
 				<li class="slider__item" >
 					<h2>
+						<strong>02</strong>
 						Lorem <br>Ipsum
 					</h2>
 					<p>
@@ -87,6 +91,8 @@
 						<a href="#">Read more</a>
 					</p>
 				</li>
+
+				<span class="pulse infinite loaded wow" data-pagespeed-url-hash="1223708619" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span>
 
 			</ul>
 					<div class="w3-section">
@@ -121,35 +127,120 @@
 
 	<section class="projects">
 
-		<h3>OUR PROJECTS</h3>
+		<h3 class="projects-title title">OUR PROJECTS</h3>
 
 		<ul class="projects-list">
-			<li class="projects__item">
-				<div>
-				<h4>URBAN <br> CEILING PLANTERS</h4>
-				<p>
-					Is a set of modern looking planters that conserves your small urban apartment spaces.
-				</p>
-				<p>
-					<a href="#">Read more</a>
-				</p>
-				</div>
-				<figure>
+			<li class="projects__item-top">
 
-					<img src="img/project_1.jpg" alt="image">
+				<div class="projects__text-top">
+
+					<h6 class="projects__title-top">
+						URBAN <br> CEILING PLANTERS
+					</h6>
+					<p class="projects__paragraph-top">
+					Is a set of modern looking planters that conserves your small urban apartment spaces.
+					</p>
+					<p>
+						<a href="#" class="projects__link">Read more</a>
+					</p>
+
+				</div>
+
+				<figure class="projects__img-top">
+
+					<img src="img/project_1.png" alt="image">
+
+				</figure>
+
+			</li>
+
+			<li class="projects__item-left">
+
+				<figure class="projects__img-left">
+
+					<img src="img/project_2.png" alt="image">
 					
 				</figure>
+
+				<div class="projects__text-left">
+
+					<h6 class="projects__title-left">
+						ELEVATE <br> PLANT STANDS
+					</h6>
+					<p class="projects__paragraph-left">
+						A popular plant during fifties, it  seems only natural that with the revival of mid-century design.
+					</p>
+					<p>
+						<a href="#" class="projects__link">Read more</a>
+					</p>
+
+				</div>
+
 			</li>
-			<li></li>
-			<li></li>
-			<li></li>
+
+
+
+			<li class="projects__item-right">
+
+				<div class="projects__text-right">
+
+					<h6 class="projects__title-right">
+						CONTEMPORARY <br> OUTDOOR PLANTERS
+					</h6>
+					<p class="projects__paragraph-right">
+						Create relaxing outdoor homes. They breathe fresh air with natural look and feel.
+					</p>
+					<p>
+						<a href="#" class="projects__link">Read more</a>
+					</p>
+
+				</div>
+
+				<figure class="projects__img-right">
+
+					<img src="img/project_3.png" alt="image">
+					
+				</figure>
+				
+
+			</li>
+			<li class="projects__item-bottom">
+
+				<figure class="projects__img-bottom">
+
+					<img src="img/project_4.png" alt="image">
+
+				</figure>
+
+				<div class="projects__text-bottom">
+
+					<h6 class="projects__title-bottom">
+						TRAY OR <br> TABLE GROUPING
+					</h6>
+					<p class="projects__paragraph-bottom">
+						Instead of your usual coffee table accessories, choose small cactus plants and succulents.
+					</p>
+					<p>
+						<a href="#" class="projects__link">Read more</a>
+					</p>
+
+				</div>
+	
+			</li>
 		</ul>
+
+		<a href="#">
+				<button class="btn projects-btn">
+					YOU WANT TO SEE MORE? <br>
+					<span>View all</span>
+				</button>	
+		</a>
 
 	</section>
 
 	<section class="team">
 
-		<h3>WE ARE THE BEST IN PLANTNERS</h3>
+		<h3 class="title">WE ARE THE BEST IN PLANTNERS</h3>
 
 		<p>
 			We’re always trying to change the industry for the better, being there for the florist at every step, <br>finding new ways to help you grow.
@@ -175,44 +266,44 @@
 		
 	</section>
 
-	<section class="our-blog">
+	<section class="blog">
 
-		<h3>Our blog</h3>
+		<h3 class="title">Our blog</h3>
 
-		<div class="blog-list">
+		<div class="blog-article">
 
-		<figure class="blog-left">
+		<figure class="blog__img-left"> <!-- blog-left -->
 			<figcaption>HOW TO GROW <br> HEALTHY SUCCULENTS</figcaption>
 			<img src="img/blog_1.png" alt="">
 		</figure>
 		
-		<ul class="blog-content">
+		<ul class="blog__list1"> <!-- blog-content -->
 
-		<li class="list-content">
+		<li class="blog__item">
 
-			<h6>TALL WHITE PLANTER</h6>
+			<h6 class="blog__title">TALL WHITE PLANTER</h6>
 
-			<p>
+			<p class="blog__paragraph">
 				This elegant geometric plant stand is made from a powder-coated metal frame and perforated metal sheets forming the planter. It’s e-primed, suitable for indoor and outdoor use and is an instant classic! The planter is valued at AU$160 RRP. (Please note, the plant and black table are not included in the prize.) To enter, all you need to do is sign up to our email.	
 			</p>
 
 			<p>
-				<a href="#">04 April</a>
+				<a href="#" class="blog__link">04 April</a>
 			</p>
 			
 		</li>
 
-		<li class="list-content">
+		<li class="blog__item">
 
-			<h6>HOW TO GROW HEALTHY SUCCULENTS</h6>
+			<h6 class="blog__title">HOW TO GROW HEALTHY SUCCULENTS</h6>
 
-			<p>
+			<p class="blog__paragraph">
 				One of the tricks I’ve learned recently is to water my succulents with a mixture of hydrogen peroxide and water (I use a solution of 2 parts water to 1 part Hydrogen Peroxide). Hydrogen peroxide is basically water with an extra oxygen molecule that is looking 
 			</p>
 
 			<p>
 
-				<a href="">03 April</a>
+				<a href="#" class="blog__link">03 April</a>
 			</p>
 			
 		</li>
@@ -222,42 +313,44 @@
 		</div>
 
 
-		<div class="blog-list">
-
-		<figure class="blog-right">
-			<figcaption>HOW TO GROW <br> HEALTHY SUCCULENTS</figcaption>
-			<img src="img/blog_2.png" alt="">
-		</figure>
+		<div class="blog-article">
 		
-		<ul class="blog-content">
+		<ul class="blog__list2">  <!-- left-content -->
 
-			<li class="list-content">
+			<li class="blog__item">
 
-				<h6>WEARABLE PLANTER</h6>
+				<h6 class="blog__title blog_title-top">WEARABLE PLANTER</h6>
 
-				<p>
+				<p class="blog__paragraph">
 					We're teaming up with Zulily for the next few days to offer a curated selection of our planters for Mother's Day! Along with our planters, you'll find some other gardening gifts and plants that any mom with a green thumb will love! The sale runs from now until April 3 at 9:00 AM EST, and you can find it mollit anim id est laborum.	
 				</p>
 
 				<p>
-				<a href="#">04 April</a>
+				<a href="#" class="blog__link">02 April</a>
 				</p>
 
 			</li>
 
-			<li class="list-content">
+			<li class="blog__item">
 			
-			<h6>CORTEN STEEL PLANTERS</h6>
+			<h6 class="blog__title">CORTEN STEEL PLANTERS</h6>
 
-			<p>
+			<p class="blog__paragraph">
 				Putting casters on planters is not always an easy thing to do.  The planter has to be sturdy enough to handle being rolled around, and the casters have to be tough enough to support hundreds of pounds of soil that is inside the planter.
 			</p>
 
-			<a href="">03 April</a>
+			<a href="" class="blog__link">01 April</a>
 
 			</li>
 			
 		</ul>
+
+		<figure class="blog__img-right">  <!-- blog-right -->
+
+			<figcaption>WEARABLE <br> PLANTERHOW</figcaption>
+			<img src="img/blog_2.png" alt="">
+
+		</figure>
 			
 		</div>
 
@@ -269,18 +362,13 @@
 				</button>	
 		</a>
 
-	
-	
-	
-
-
 	</section>
 
 	<footer>
-		<h3>CONTACT</h3>
+		<h3 class="title">CONTACT</h3>
 
 		<form action="">
-			<label class="form-content .form-group">
+			<label class="form-content form-group">
 				<label for="first_name"> Name: </label>
 				<input id="first_name" type="text">	
 			</label>
@@ -313,15 +401,7 @@
 		
 	</footer>
 
-			
-
-
-
-
-
 	</div>
-
-
 
 	<script src="libs/wow/wow.min.js"></script>
 	<script>new WOW().init();</script>

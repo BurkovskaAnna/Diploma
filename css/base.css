@@ -4,8 +4,13 @@
     padding: 0 10px;
 }
 
-h3 {
-	font-size: 32px;
+img {
+    width: 100%;
+}
+
+.title {
+	// font-size: 32px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (32 - 24) + 24px);
 	font-weight: 600;
 	font-family: 'Roboto', sans-serif;
 	color: #000000;
@@ -13,7 +18,15 @@ h3 {
 	padding-top: 90px;
 }
 
-.blog-list:after
+.blog-article:after,
+.blog__list1::after,
+.blog__list2::after,
+.projects-list::after,
+.projects__item-top::after,
+.projects__item-left::after,
+.projects__item-right::after,
+.projects__item-bottom::after
+
 {
     display: table;
     clear: both;
@@ -21,3 +34,8 @@ h3 {
 
     content: '';
 }
+
+// .blog__img-left::after,
+// .blog__img-right::after,
+
+
