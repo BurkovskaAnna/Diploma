@@ -457,7 +457,6 @@ svg path {
     z-index: 1;
 }
 
-
 .projects__paragraph-top {
     font-family: 'Roboto', sans-serif;
     // font-size: 14px;
@@ -486,14 +485,14 @@ svg path {
     top: 7px;
     right: -14%;
 
-    width: 4px;
-    height: 8px;
-
     content: '';
-
-    background: url(../img/arrow.png);
-    background-repeat: no-repeat;
+    
+    border-top: 4px solid transparent;
+    border-left: 7px solid #58c934;
+    border-bottom: 4px solid transparent;
 }
+
+
 
 .projects__img-top {
     float: left;
@@ -537,7 +536,8 @@ svg path {
     margin-bottom: 70px;
 }
 
-.projects__item-left:hover:before {
+.projects__item-left:hover:before,
+.projects__item-right:hover::before  {
     box-sizing: border-box;
     
     position: absolute;
@@ -550,6 +550,17 @@ svg path {
     content: '';
 
     border: 6px #58c934 solid;
+}
+
+.projects__item-left:hover .projects__link::after,
+.projects__item-right:hover .projects__link::after,
+.projects__item-top:hover .projects__link::after,
+.projects__item-bottom:hover .projects__link::after {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 7px solid black;
+    border-bottom: 4px solid transparent;
 }
 
 .projects__img-left img {
@@ -610,21 +621,6 @@ svg path {
     float: left;
 
     width: 49%;
-}
-
-.projects__item-right:hover::before {
-    box-sizing: border-box;
-    
-    position: absolute;
-    top: -8%;
-    left: -6%;
-
-    width: 58%;
-    height: 100%;
-
-    content: '';
-
-    border: 6px #58c934 solid;
 }
 
 .projects__title-right {
