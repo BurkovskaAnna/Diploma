@@ -315,15 +315,15 @@ svg path {
 .slider a::after {
     position: absolute;
     top: 7px;
-    right: -14%;
-
-    width: 4px;
-    height: 8px;
+    right: -16%;
 
     content: '';
 
-    background: url(../img/arrow.png);
-    background-repeat: no-repeat;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 7px solid #58c934;
+    border-bottom: 4px solid transparent;
 }
 
 .slider span::after {
@@ -764,6 +764,7 @@ svg path {
 
 .team {
     text-align: center;
+    padding: 0 8%;
 
     background-color: #f3f3f3;
 
@@ -963,13 +964,13 @@ svg path {
     top: 6px;
     right: -29px;
 
-    width: 4px;
-    height: 8px;
-
     content: '';
 
-    background: url(../img/arrow.png);
-    background-repeat: no-repeat;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 7px solid #58c934;
+    border-bottom: 4px solid transparent;
 }
 
 .blog__link::before {
@@ -1074,7 +1075,7 @@ svg path {
     background-color: #f3f3f3;
 }
 
-.btn:hover::before {
+.btn::before {
     box-sizing: border-box;
     
     position: absolute;
@@ -1090,10 +1091,27 @@ svg path {
 }
 
 .btn span {
+    position: relative;
+
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.5;
 }
+
+.btn span::after {
+    position: absolute;
+    top: 7px;
+    right: -21%;
+    
+    content: '';
+
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 7px solid #58c934;
+    border-bottom: 4px solid transparent;
+}
+
 
 /*
   ====================
@@ -1177,13 +1195,13 @@ label {
     top: 53px;
     right: -1%;
 
-    width: 4px;
-    height: 8px;
-
     content: '';
 
-    background: url(../img/arrow.png);
-    background-repeat: no-repeat;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 7px solid #58c934;
+    border-bottom: 4px solid transparent;
 }
 
 nav {
