@@ -277,7 +277,7 @@ svg path {
 .slider h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
-    line-height: 1.5;
+    line-height: 1.2;
 
     position: relative;
 
@@ -415,7 +415,7 @@ svg path {
 }
 
 .projects__item-top {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .projects__text-top {
@@ -424,7 +424,7 @@ svg path {
     box-sizing: border-box;
 
     width: 43%;
-    padding: 5% 0 0 20%;
+    padding: 5% 0 2% 20%;
 }
 
 
@@ -505,33 +505,50 @@ svg path {
     position: relative;
 }
 
-.projects__item-top:hover::before {
+.projects__item-top:hover::before,
+.projects__item-bottom:hover::before {
     box-sizing: border-box;
     
     position: absolute;
-    top: -10%;
-    left: 18%;
+    top: 8%;
+    left: 5%;
+    bottom: -25px;
 
-    width: 70%;
-    height: 87%;
+    width: 90%;
 
     content: '';
 
     border: 6px #58c934 solid;
+    
 }
 
+// .projects__item-bottom:hover::before {
+//     box-sizing: border-box;
+    
+//     position: absolute;
+//     left: 5%;
+//     top: -14%;
+
+//     width: 90%;
+
+//     content: '';
+
+//     border: 6px #58c934 solid;
+    
+// }
+
 .projects__img-top img {
-    width: 85%;  
+    width: 100%;  
 } 
 
 .projects__item-left {
     position: relative;
     top: 50px;
-    left: 17%;
+    left: 9%;
 
     float: left;
 
-    width: 49%;
+    width: 50%;
     padding-bottom: 70px;
     margin-bottom: 70px;
 }
@@ -541,10 +558,10 @@ svg path {
     box-sizing: border-box;
     
     position: absolute;
-    top: -8%;
-    left: -6%;
+    top: -5%;
+    left: -11%;
 
-    width: 58%;
+    width: 75%;
     height: 100%;
 
     content: '';
@@ -564,7 +581,7 @@ svg path {
 }
 
 .projects__img-left img {
-    width: 57%;
+    width: 70%;
 }
 
 .projects__text-left {
@@ -620,7 +637,7 @@ svg path {
 
     float: left;
 
-    width: 49%;
+    width: 50%;
 }
 
 .projects__title-right {
@@ -650,7 +667,7 @@ svg path {
 }
 
 .projects__img-right img {
-   width: 57%;
+   width: 70%;
 }
 
 .projects__text-right {
@@ -676,24 +693,8 @@ svg path {
     position: relative;
 
     margin-bottom: 70px;
-    padding: 0px 1% 20px;
+    padding-bottom 20px;
 }
-
-.projects__item-bottom:hover::before {
-    box-sizing: border-box;
-    
-    position: absolute;
-    left: 18%;
-    top: -13%;
-
-    width: 66%;
-    height: 100%;
-
-    content: '';
-
-    border: 6px #58c934 solid;
-}
-
 
 .projects__text-bottom {
     float: left;
@@ -748,12 +749,12 @@ svg path {
 .projects__img-bottom {
     float: left;
 
-    width: 44%;
-    padding-left: 13%;
+    width: 55%;
+    padding-right: 2%;
 }
 
 .projects__img-bottom img {
-    width: 85%;  
+    width: 100%;  
 }
 
 /*
@@ -776,10 +777,11 @@ svg path {
 
 .team p {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    // font-size: 18px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 12) + 12px);
     line-height: 1.5;
 
-    padding: 20px 1%;
+    padding: 30px 1%;
 }
 
 .team-list {
@@ -791,7 +793,7 @@ svg path {
 .team-list h6 {
     font-family: 'Roboto', sans-serif;
     // font-size: 18px;
-    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 14) + 14px);
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 12) + 12px);
     font-weight: 600;
     line-height: 1.5;
 
@@ -813,7 +815,8 @@ svg path {
     display: inline-block;
 
     width: 23.33%;
-    margin: 0 4%;
+    margin: 0 2%;
+    padding: 1% 2%;
 
     text-align: center;
 }
@@ -822,8 +825,8 @@ svg path {
     box-sizing: border-box;
     
     position: absolute;
-    top: -17px;
-    right: -5%;
+    top: -15px;
+    right: -10%;
 
     width: 100%;
     height: 107%;
@@ -869,8 +872,8 @@ svg path {
     box-sizing: border-box;
     
     position: absolute;
-    bottom: 87px;
-    left: 12%;
+    bottom: 78px;
+    left: 16%;
 
     width: 65%;
     height: 85%;
@@ -892,13 +895,14 @@ svg path {
 .blog__img-left figcaption {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 12) + 12px);
     font-weight: 600;
     line-height: 1.5;
 
     position: relative;
 
     padding-bottom: 20px;
-    padding-left: 39%;
+    padding-left: 29%;
 
     text-align: left;
 }
@@ -906,7 +910,7 @@ svg path {
 .blog__img-left::before {
     position: absolute;
     top: 46px;
-    left: 35%;
+    left: 28%;
 
     width: 2px;
     height: 50%;
@@ -1000,7 +1004,7 @@ svg path {
 
     position: relative;
 
-    float: left;
+    float: right;
 
     width: 50%;
     padding: 40px 1%;
@@ -1032,8 +1036,8 @@ svg path {
     box-sizing: border-box;
     
     position: absolute;
-    top: -9px;
-    left: 14%;
+    top: -3px;
+    left: 11%;
 
     width: 65%;
     height: 85%;
@@ -1059,7 +1063,6 @@ svg path {
 .btn {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    line-height: 1.5;
 
     position: relative;
     position: relative;
@@ -1067,7 +1070,7 @@ svg path {
 
     display: inline-block;
 
-    padding: 15px 16% 15px 5%;
+    padding: 8px 16% 30px 5%;
 
     cursor: pointer;
 
@@ -1079,7 +1082,7 @@ svg path {
     box-sizing: border-box;
     
     position: absolute;
-    top: -10px;
+    top: -12px;
     left: -11%;
 
     width: 100%;
@@ -1232,6 +1235,39 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+
+    .blog__img-left  {
+
+        width: 100%;
+    }
+
+    .blog__list1 {
+        
+        width: 100%;
+        padding: 2px 19% 2px 31%;
+    }
+
+    .blog__img-right {
+
+        width: 100%; 
+        float: right;
+    }
+    .blog__list2 {
+        
+        width: 100%;
+        padding: 2px 19% 2px 31%;
+    }
+
+    .blog__img-right img {
+
+    padding: 1% 15%;
+    
+    }
+
+    .blog__img-right:hover::after {
+        
+        left: 22%;
+    }
 
 }
 
