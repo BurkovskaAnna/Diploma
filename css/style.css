@@ -765,7 +765,7 @@ svg path {
 
 .team {
     text-align: center;
-    padding: 0 8%;
+    padding: 5% 8%;
 
     background-color: #f3f3f3;
 
@@ -778,7 +778,7 @@ svg path {
 .team p {
     font-family: 'Roboto', sans-serif;
     // font-size: 18px;
-    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 12) + 12px);
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 10) + 10px);
     line-height: 1.5;
 
     padding: 30px 1%;
@@ -793,19 +793,17 @@ svg path {
 .team-list h6 {
     font-family: 'Roboto', sans-serif;
     // font-size: 18px;
-    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 12) + 12px);
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 10) + 10px);
     font-weight: 600;
     line-height: 1.5;
 
-    padding: 15px 1%;
+    padding: 15px 1% 5px;
 }
 
+.team-list p {
 
-.team-list p { 
-    padding: 0px 1%;
+    padding: 0 1%;
 }
-
-
 
 .team__item {
     font-size: 14px;
@@ -814,7 +812,7 @@ svg path {
 
     display: inline-block;
 
-    width: 23.33%;
+    width: 24.33%;
     margin: 0 2%;
     padding: 1% 2%;
 
@@ -873,7 +871,7 @@ svg path {
     
     position: absolute;
     bottom: 78px;
-    left: 16%;
+    left: 13%;
 
     width: 65%;
     height: 85%;
@@ -895,22 +893,21 @@ svg path {
 .blog__img-left figcaption {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 12) + 12px);
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 14) + 14px);
     font-weight: 600;
     line-height: 1.5;
 
     position: relative;
 
     padding-bottom: 20px;
-    padding-left: 29%;
-
+    padding-left: 26%;
     text-align: left;
 }
 
 .blog__img-left::before {
     position: absolute;
     top: 46px;
-    left: 28%;
+    left: 25%;
 
     width: 2px;
     height: 50%;
@@ -923,7 +920,7 @@ svg path {
 
 .blog__img-left img {
     width: 65%;
-    padding: 1% 22%;
+    padding: 1% 18%;
 }
 
 .blog__item {
@@ -1022,14 +1019,8 @@ svg path {
     line-height: 1.5;
 
     padding: 0 40% 20px 0;
-    padding-right: 47%;
-    padding-bottom: 20px;
 
     text-align: right;
-}
-
-.blog__img-right figcaption {
-    position: relative;
 }
 
 .blog__img-right:hover::after {
@@ -1049,7 +1040,7 @@ svg path {
 
 .blog__img-right::before {
     position: absolute;
-    right: 44%;
+    right: 39%;
 
     width: 2px;
     height: 50%;
@@ -1267,6 +1258,85 @@ footer p {
     .blog__img-right:hover::after {
         
         left: 22%;
+    }
+
+}
+
+
+@media screen and (min-width: 721px) { 
+    
+    .team-slider {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .team-list {
+        display: none;
+    }
+
+    .team-slider {
+        font-size: 14px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+    .team__item-slider {
+        font-size: 14px;
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        padding: 1% 2%;
+        text-align: center;
+    }
+
+    .team-btn {
+        font-size: 30px;
+        color: #58c934;
+        position: absolute;
+    }
+    .team-btn-right {
+        top: 30%;
+        right: 2%;
+    }
+    .team-btn-left {
+        top: 30%;
+        left: 2%;
+    }
+
+    .team__item-slider h6 {
+        font-family: 'Roboto', sans-serif;
+        font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 10) + 12px);
+        font-weight: 600;
+        line-height: 1.5;
+
+        padding: 15px 1% 5px;
+    }
+
+    .team__item-slider p {
+        font-family: 'Roboto', sans-serif;
+        
+        font-size: calc( (100vw - 320px)/(1280 - 320) * (18 - 10) + 12px);
+        line-height: 1.5;
+
+        padding: 0 1%;
+    }
+
+    .team__item-slider:hover::before {
+        box-sizing: border-box;
+    
+        position: absolute;
+        top: -15px;
+        right: -10%;
+
+        width: 100%;
+        height: 105%;
+
+        content: '';
+
+        border: 6px #58c934 solid;
     }
 
 }
