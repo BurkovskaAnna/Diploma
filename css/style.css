@@ -49,6 +49,8 @@ header {
 
     border: none;
     background: none;
+    
+    cursor: pointer;
 }
 
 .toggle-mnu span {
@@ -276,7 +278,8 @@ svg path {
 
 .slider h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    // font-size: 50px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (50 - 42) + 42px);
     line-height: 1.2;
 
     position: relative;
@@ -292,12 +295,13 @@ svg path {
     color: #58c934;
     position: absolute;
     left: -5%;
-    top: 45px;
+    top: 22%;
 }
 
 .slider p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (14 - 13) + 13px);
     line-height: 1.5;
 
     padding-bottom: 20px;
@@ -347,17 +351,18 @@ svg path {
     position: absolute;
     right: 2%;
     bottom: 15%;
+    cursor: pointer;
 }
 
 .w3-section a {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (14 - 13) + 13px);
 
     margin-right: 29px;
 
     text-transform: uppercase;
 }
-
 
 .slider-number {
     position: absolute;
@@ -378,7 +383,8 @@ svg path {
 
 .number-green {
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+    // font-size: 60px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (60 - 48) + 48px);
     font-weight: 600;
 
     margin-left: 48%;
@@ -408,6 +414,11 @@ svg path {
 .projects {
     padding-bottom: 50px;
    
+}
+
+.projects-list {
+    
+    padding: 2%;
 }
 
 .projects-title {
@@ -958,6 +969,7 @@ svg path {
     text-decoration: none;
 
     color: #000;
+    cursor: pointer;
 }
 
 .blog__link::after {
@@ -1018,7 +1030,7 @@ svg path {
     font-weight: 600;
     line-height: 1.5;
 
-    padding: 0 40% 20px 0;
+    padding: 0 39% 20px 0;
 
     text-align: right;
 }
@@ -1040,7 +1052,7 @@ svg path {
 
 .blog__img-right::before {
     position: absolute;
-    right: 39%;
+    right: 38%;
 
     width: 2px;
     height: 50%;
@@ -1146,7 +1158,7 @@ label {
 .form-content {
     margin-bottom: 20px;
 
-    text-align: center;
+    text-align: center;    
 }
 
 .form-content input {
@@ -1177,11 +1189,13 @@ label {
     border: none;
     border-bottom: 2px solid #58c934;
     background: none;
+    cursor: pointer;
 }
 
 .form-btn {
     position: relative;
     right: 15%;
+    cursor: pointer;
 }
 
 .form-btn::after {
@@ -1207,6 +1221,7 @@ nav {
 nav a {
     vertical-align: middle;
     text-decoration: none;
+    cursor: pointer;
 }
 
 nav img {
@@ -1235,7 +1250,7 @@ footer p {
     .blog__list1 {
         
         width: 100%;
-        padding: 2px 19% 2px 31%;
+        padding: 2px 16% 2px 33%;
     }
 
     .blog__img-right {
@@ -1246,7 +1261,7 @@ footer p {
     .blog__list2 {
         
         width: 100%;
-        padding: 2px 19% 2px 31%;
+        padding: 2px 33% 2px 16%;
     }
 
     .blog__img-right img {
@@ -1258,6 +1273,14 @@ footer p {
     .blog__img-right:hover::after {
         
         left: 22%;
+    }
+
+    .blog__img-right::before {
+        right: 28%;
+    }
+
+    .blog__img-right figcaption {
+        padding: 0 29% 20px 0;
     }
 
 }
@@ -1272,6 +1295,18 @@ footer p {
 }
 
 @media screen and (max-width: 720px) {
+
+    .slider p {
+        padding-bottom: 15px;
+    }
+    .slider {
+        right: -39%;
+        width: 50%;
+    }
+
+    .slider span::after {
+        bottom: -100px;
+    }
 
     .team-list {
         display: none;
@@ -1296,6 +1331,7 @@ footer p {
         font-size: 30px;
         color: #58c934;
         position: absolute;
+        cursor: pointer;
     }
     .team-btn-right {
         top: 30%;
@@ -1332,7 +1368,7 @@ footer p {
         right: -10%;
 
         width: 100%;
-        height: 105%;
+        height: 108%;
 
         content: '';
 
@@ -1342,13 +1378,66 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+     .slider-number {
+        display: none;
+    }
 
+    .slider {
+        right: -30%;
+
+        width: 55%;
+    }
+
+    .slider::before {
+        height: 92%;
+        
+        width: 114%; 
+    }
+
+    .slider li {
+        padding-right: 3%;
+    }
+    .slider h2 {
+        margin-left: -80px;
+    }
+    .slider span::after {
+        bottom: -88px;
+    }
+    .w3-section {
+        bottom: 20%;
+    }
 
 }
+
 
 @media screen and (max-width: 320px) {
 
+    // .slider {
+    //     right: -30%;
+
+    //     width: 55%;
+    // }
+
+    // .slider::before {
+    //     height: 92%;
+        
+    //     width: 114%; 
+    // }
+
+    // .slider li {
+    //     padding-right: 3%;
+    // }
+    // .slider h2 {
+    //     margin-left: -80px;
+    // }
+    // .slider span::after {
+    //     bottom: -88px;
+    // }
+    // .w3-section {
+    //     bottom: 20%;
+    // }
 }
+
 
 
 
