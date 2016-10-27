@@ -1065,7 +1065,8 @@ svg path {
 
 .btn {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (20 - 14) + 14px);
 
     position: relative;
     position: relative;
@@ -1411,31 +1412,9 @@ footer p {
 
 
 @media screen and (max-width: 320px) {
-
-    // .slider {
-    //     right: -30%;
-
-    //     width: 55%;
-    // }
-
-    // .slider::before {
-    //     height: 92%;
-        
-    //     width: 114%; 
-    // }
-
-    // .slider li {
-    //     padding-right: 3%;
-    // }
-    // .slider h2 {
-    //     margin-left: -80px;
-    // }
-    // .slider span::after {
-    //     bottom: -88px;
-    // }
-    // .w3-section {
-    //     bottom: 20%;
-    // }
+        .btn { 
+        left: 20%;
+    }
 }
 
 
