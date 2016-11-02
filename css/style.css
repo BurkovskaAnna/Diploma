@@ -599,10 +599,10 @@ svg path {
 
 .projects__paragraph-left {
     font-family: 'Roboto', sans-serif;
-    font-size: calc( (100vw - 320px)/(1280 - 320) * (14 - 12) + 12px);
     line-height: 1.5;
     
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: calc( (100vw - 320px)/(1280 - 320) * (14 - 12) + 12px);
 
     padding-bottom: 20px;
 }
@@ -1342,9 +1342,12 @@ footer p {
         box-sizing: border-box;
         width: 100%;
         padding: 5% 25% 2% 20%;
+        float: none;
     }
     .projects__img-top {
         width: 100%;
+        float: none;
+        padding-left: 0;
     }
     .projects__img-top img {
         width: 85%;
@@ -1355,20 +1358,27 @@ footer p {
         bottom: 13px;
     }
     .projects__item-left {    
-        left: 22%;
+        left: 10%;
         padding-bottom: 36px;
         margin-bottom: 0;
-        position: relative;
         float: none;
         width: 100%;
         top: 0;
     
     }
+    .projects__text-left,
+    .projects__text-right {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .projects__img-left,
+    .projects__img-right{
+        width: 100%;
+    }
     .projects__item-right {
-        left: 22%;
+        left: 10%;
         margin-bottom: 70px;
         padding-top: 10%;
-        position: relative;
         float: none;
         width: 100%;
         top: 0;
@@ -1377,6 +1387,11 @@ footer p {
     .projects__img-left img  {
         width: 50%;
     }
+    .projects__text-left,
+    .projects__text-right {
+        padding: 2% 48% 5% 9%;  
+    } 
+    
 
     .projects__item-left:hover:before, 
     .projects__item-right:hover::before {
@@ -1394,13 +1409,18 @@ footer p {
         box-sizing: border-box;
         width: 100%;
         padding: 5% 25% 2% 20%;
+        float: none;
     }
     .projects__img-bottom {
         width: 100%;
-        padding-left: 2%;
+        padding-left: 0;
+        float: none;
     }
     .projects__img-bottom img {
         width: 85%;
+    }
+    .projects__title-bottom  {
+        text-align: left;
     }
     .projects__item-bottom:hover::before {
         top: 3%;
@@ -1515,6 +1535,18 @@ footer p {
 
 @media screen and (max-width: 320px) {
 
+    .projects__item-right,
+    .projects__item-left {
+        left: 10%;
+        box-sizing: border-box;
+    }
+
+    .projects__text-left {
+        padding: 2% 0% 5% 13%;
+    }
+    .projects__text-right {
+        padding: 5% 0% 5% 14%;
+    }
 }
 
 
