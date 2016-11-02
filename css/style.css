@@ -1358,45 +1358,49 @@ footer p {
         bottom: 13px;
     }
     .projects__item-left {    
-        left: 10%;
+        left: 0;
         padding-bottom: 36px;
         margin-bottom: 0;
         float: none;
         width: 100%;
         top: 0;
+        box-sizing: border-box;
+        padding-left: 20%;
     
     }
     .projects__text-left,
     .projects__text-right {
         box-sizing: border-box;
         width: 100%;
+        padding: 2% 48% 5% 9%;  
+    }
+
+    .projects__title-right::after,
+    .projects__title-left::after {
+        left: -5%;
     }
     .projects__img-left,
     .projects__img-right{
         width: 100%;
     }
     .projects__item-right {
-        left: 10%;
+        left: 0;
         margin-bottom: 70px;
         padding-top: 10%;
         float: none;
         width: 100%;
         top: 0;
+        box-sizing: border-box;
+        padding-left: 20%;
     }
     .projects__img-right img,
     .projects__img-left img  {
-        width: 50%;
+        width: 70%;
     }
-    .projects__text-left,
-    .projects__text-right {
-        padding: 2% 48% 5% 9%;  
-    } 
-    
-
     .projects__item-left:hover:before, 
     .projects__item-right:hover::before {
         top: 3%;
-        left: 4%;
+        left: 22%;
         width: 55%;
         height: 94%;
     }
