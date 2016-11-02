@@ -249,7 +249,7 @@ svg path {
     position: relative;
     right: -50%;
 
-    width: 36%;
+    width: 34%;
     margin-bottom: 100px;
     padding: 70px 2% 0;
 }
@@ -329,6 +329,15 @@ svg path {
     border-left: 7px solid #58c934;
     border-bottom: 4px solid transparent;
 }
+
+.slider a:hover::after {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 7px solid #000;
+    border-bottom: 4px solid transparent;
+}
+
 
 .slider span::after {
 
@@ -533,21 +542,6 @@ svg path {
     
 }
 
-// .projects__item-bottom:hover::before {
-//     box-sizing: border-box;
-    
-//     position: absolute;
-//     left: 5%;
-//     top: -14%;
-
-//     width: 90%;
-
-//     content: '';
-
-//     border: 6px #58c934 solid;
-    
-// }
-
 .projects__img-top img {
     width: 100%;  
 } 
@@ -639,6 +633,21 @@ svg path {
     background: url(../img/vertical-line.png);
     background-repeat: no-repeat;
 }
+
+// .projects__text-left::after {
+//     position: absolute;
+//     bottom: 20px;
+//     left: -10%;
+
+
+//     width: 2px;
+//     height: 370px;
+
+//     content: '';
+
+//     background: url(../img/vertical-line.png);
+//     background-repeat: no-repeat;
+// }
 
 
 .projects__item-right {
@@ -986,6 +995,14 @@ svg path {
     border-bottom: 4px solid transparent;
 }
 
+.blog__link:hover::after {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 7px solid #000;
+    border-bottom: 4px solid transparent;
+}
+
 .blog__link::before {
     position: absolute;
     top: 24px;
@@ -1069,12 +1086,12 @@ svg path {
     font-size: calc( (100vw - 320px)/(1280 - 320) * (20 - 14) + 14px);
 
     position: relative;
-    position: relative;
-    left: 30%;
+    // left: 32%;
 
-    display: inline-block;
+    display: block;
 
     padding: 8px 16% 30px 5%;
+    margin: 0 auto;
 
     cursor: pointer;
 
@@ -1116,6 +1133,14 @@ svg path {
     height: 0;
     border-top: 4px solid transparent;
     border-left: 7px solid #58c934;
+    border-bottom: 4px solid transparent;
+}
+
+.btn span:hover::after {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 7px solid #000;
     border-bottom: 4px solid transparent;
 }
 
@@ -1236,12 +1261,16 @@ footer p {
     font-size: calc( (100vw - 320px)/(1280 - 320) * (14 - 12) + 12px);
     line-height: 1.5;
 
-    padding: 15px 1%;
+    padding: 15px 2%;
 
     text-align: center;
 }
 
 @media screen and (max-width: 768px) {
+
+    .projects__link::after {
+        top: 6px;
+    }
 
     .blog__img-left  {
 
@@ -1307,6 +1336,79 @@ footer p {
 
     .slider span::after {
         bottom: -100px;
+    }
+
+    .projects__text-top {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5% 25% 2% 20%;
+    }
+    .projects__img-top {
+        width: 100%;
+    }
+    .projects__img-top img {
+        width: 85%;
+    }
+    .projects__item-top:hover::before {
+        top: 1%;
+        left: 5%;
+        bottom: 13px;
+    }
+    .projects__item-left {    
+        left: 22%;
+        padding-bottom: 36px;
+        margin-bottom: 0;
+        position: relative;
+        float: none;
+        width: 100%;
+        top: 0;
+    
+    }
+    .projects__item-right {
+        left: 22%;
+        margin-bottom: 70px;
+        padding-top: 10%;
+        position: relative;
+        float: none;
+        width: 100%;
+        top: 0;
+    }
+    .projects__img-right img,
+    .projects__img-left img  {
+        width: 50%;
+    }
+
+    .projects__item-left:hover:before, 
+    .projects__item-right:hover::before {
+        top: 3%;
+        left: 4%;
+        width: 55%;
+        height: 94%;
+    }
+    .projects__item-bottom {
+        margin-bottom: 70px;
+        padding-bottom: 16px;
+    }
+
+   .projects__text-bottom {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5% 25% 2% 20%;
+    }
+    .projects__img-bottom {
+        width: 100%;
+        padding-left: 2%;
+    }
+    .projects__img-bottom img {
+        width: 85%;
+    }
+    .projects__item-bottom:hover::before {
+        top: 3%;
+        left: 5%;
+        bottom: 13px;
+    }
+    .projects__title-bottom::after { 
+        width: 100%;
     }
 
     .team-list {
@@ -1412,9 +1514,7 @@ footer p {
 
 
 @media screen and (max-width: 320px) {
-        .btn { 
-        left: 20%;
-    }
+
 }
 
 

@@ -35,7 +35,8 @@ img {
     content: '';
 }
 
-// .blog__img-left::after,
-// .blog__img-right::after,
+a {
+    text-decoration: none;
+}
 
 
