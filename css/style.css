@@ -593,7 +593,7 @@ svg path {
     box-sizing: border-box;
 
     width: 50%;
-    padding: 2% 6% 5% 13%;
+    padding: 2% 2% 5% 13%;
 }
 
 
@@ -619,36 +619,20 @@ svg path {
     padding-bottom: 15px;
 }
 
-.projects__title-left::after {
+.projects__title-left::before {
     position: absolute;
-    bottom: 20px;
-    left: -10%;
+    bottom: -111px;
+    left: -7%;
 
 
     width: 2px;
-    height: 370px;
+    height: 450%;
 
     content: '';
 
     background: url(../img/vertical-line.png);
     background-repeat: no-repeat;
 }
-
-// .projects__text-left::after {
-//     position: absolute;
-//     bottom: 20px;
-//     left: -10%;
-
-
-//     width: 2px;
-//     height: 370px;
-
-//     content: '';
-
-//     background: url(../img/vertical-line.png);
-//     background-repeat: no-repeat;
-// }
-
 
 .projects__item-right {
     position: relative;
@@ -673,11 +657,11 @@ svg path {
 
 .projects__title-right::after {
     position: absolute;
-    top: 7px;
-    left: -10%;
+    left: -9%;
+    top: 3px;
 
     width: 2px;
-    height: 370px;
+    height: 450%;
 
     content: '';
 
@@ -1372,7 +1356,7 @@ footer p {
     .projects__text-right {
         box-sizing: border-box;
         width: 100%;
-        padding: 2% 48% 5% 9%;  
+        padding: 2% 48% 5% 13%;  
     }
 
     .projects__title-right::after,
@@ -1400,8 +1384,8 @@ footer p {
     .projects__item-left:hover:before, 
     .projects__item-right:hover::before {
         top: 3%;
-        left: 22%;
-        width: 55%;
+        left: 23%;
+        width: 59%;
         height: 94%;
     }
     .projects__item-bottom {
@@ -1539,18 +1523,18 @@ footer p {
 
 @media screen and (max-width: 320px) {
 
-    .projects__item-right,
-    .projects__item-left {
-        left: 10%;
-        box-sizing: border-box;
-    }
+    // .projects__item-right,
+    // .projects__item-left {
+    //     left: 10%;
+    //     box-sizing: border-box;
+    // }
 
-    .projects__text-left {
-        padding: 2% 0% 5% 13%;
-    }
-    .projects__text-right {
-        padding: 5% 0% 5% 14%;
-    }
+    // .projects__text-left {
+    //     padding: 2% 0% 5% 13%;
+    // }
+    // .projects__text-right {
+    //     padding: 5% 0% 5% 14%;
+    // }
 }
 
 
