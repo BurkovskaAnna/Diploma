@@ -36,20 +36,20 @@ $(document).ready(function() {
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	});
 
-	$("input, select, textarea").jqBootstrapValidation();
+	// $("input, select, textarea").jqBootstrapValidation();
 
-	$(".top-mnu ul a").mPageScroll2id();
+	// $(".top-mnu ul a").mPageScroll2id();
 
 });
-$(window).load(function() {
+// $(window).load(function() {
 
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
+// 	$(".loader_inner").fadeOut();
+// 	$(".loader").delay(400).fadeOut("slow");
 
-	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
-	$(".top_text p").animated("fadeInUp", "fadeOutDown");
+// 	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
+// 	$(".top_text p").animated("fadeInUp", "fadeOutDown");
 
-}); 
+// }); 
 
 // (function () {
 var slideIndex = 1;
@@ -80,6 +80,8 @@ function showDivs(n) {
 }
 // })();
 
+
+
 // (function () {
 	var slideIndex = 1;
 	showDiv(slideIndex);
@@ -99,6 +101,25 @@ function showDivs(n) {
 	  x[slideIndex-1].style.display = "block";
 	}
 // })();
+
+// Function that executes on click of first next button.
+function next_step1() {
+document.getElementById("step_1").style.display = "none";
+document.getElementById("step_2").style.display = "block";
+}
+
+// Function that executes on click of second next button.
+function next_step2() {
+document.getElementById("step_2").style.display = "none";
+document.getElementById("step_3").style.display = "block";
+
+}
+
+function next_step3() {
+document.getElementById("step_3").style.display = "none";
+document.getElementById("step_1").style.display = "block";
+
+}
 
 
 

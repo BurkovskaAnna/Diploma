@@ -478,17 +478,34 @@
 	
 		<h3 class="title">CONTACT</h3>
 
-		<form action="">
-			<label class="form-content form-group">
-				<label for="first_name"> Name: </label>
-				<input id="first_name" type="text">	
-			</label>
-			<button class="form-btn">
-				Next
-			</button>
+		<form >
+			<fieldset id="step_1" class="form-content form-group">
+				<label class="form_lable" for="first_name"> Name: </label>
+				<input id="first_name" type="text">
+				<span class="bar"></span>
+				<label class="form-btn">
+					<input id="next_btn1" class="form__input" onclick="next_step1()" type="button" value="Next">
+				</label>
+			</fieldset>
 
+			<fieldset id="step_2" class="form-content form-group">
+				<label class="form_lable" for="email"> Email: </label>
+				<input id="email" type="text">	
+				<span class="bar"></span>
+				<label class="form-btn">
+					<input id="next_btn2" class="form__input" name="next" onclick="next_step2()" type="button" value="Next">
+				</label>
+			</fieldset>
 
-			
+			<fieldset id="step_3" class="form-content form-group">
+				<label class="form_lable" for="first_name"> Message: </label>
+				<textarea name="address" rows="1"></textarea>
+				<span class="bar-text"></span>
+				<label class="form__btn-submit">
+				<input class="submit_btn form__input" onclick="next_step3()" type="button" value="Submit">
+				</label>
+			</fieldset>
+
 		</form>
 
 		<nav type="context toolbar">
