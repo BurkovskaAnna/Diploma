@@ -156,7 +156,7 @@ svg path {
     position: fixed;
     z-index: 50;
     top: 0;
-    right: 0;
+    left: 0;
 
     display: none;
 
@@ -175,7 +175,11 @@ svg path {
 }
 
 .top-mnu ul {
-    margin-top: 130px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    right: 0;
 
     -webkit-animation-duration: .01s;
             animation-duration: .01s;
@@ -1554,24 +1558,24 @@ textarea {
     
 }
 
-nav {
-    padding: 30px 1%;
+.footer__nav {
+    // padding: 30px 1%;
 
     text-align: center;
 }
 
-nav a {
+.footer__nav a {
     vertical-align: middle;
     text-decoration: none;
     cursor: pointer;
 }
 
-nav img {
+.footer__nav img {
     width: 41px;
     height: 26px;
 }
 
-footer p {
+.footer__paragraph {
     font-family: 'Roboto', sans-serif;
     // font-size: 14px;
     font-size: calc( (100vw - 320px)/(1280 - 320) * (14 - 12) + 12px);
@@ -1875,18 +1879,22 @@ footer p {
     }
 
     .blog__img-right:hover::after {
-    box-sizing: border-box;
+        box-sizing: border-box;
     
-    position: absolute;
-    top: -3px;
-    left: 11%;
+        position: absolute;
+        top: -3px;
+        left: 11%;
 
-    width: 65%;
-    height: 85%;
+        width: 65%;
+        height: 85%;
 
-    content: '';
+        content: '';
 
-    border: 6px #58c934 solid;
+        border: 6px #58c934 solid;
+    }
+
+    .bar {
+        width: 47%;
     }
 
 }
@@ -1936,6 +1944,9 @@ footer p {
     .form__btn-submit {
         margin: 40px 39% 80px;
         right: 0;
+    }
+        .bar {
+        width: 49%;
     }
 
 }
