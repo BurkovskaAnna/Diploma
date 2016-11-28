@@ -64,8 +64,8 @@ a {
           transition: none !important;
 }
 
-a:hover .border-line,
-a:focus .border-line {
+span:hover .border-line,
+span:focus .border-line {
   opacity: 1;
 
   -webkit-transition-duration: .4s;
@@ -78,10 +78,10 @@ a:focus .border-line {
   width: 0;
 }
 
-a:hover .border-line-1,
-a:focus .border-line-1,
-a:hover .border-line-3,
-a:focus .border-line-3 {
+span:hover .border-line-1,
+span:focus .border-line-1,
+span:hover .border-line-3,
+span:focus .border-line-3 {
   width: 100%;
 }
 
@@ -91,10 +91,10 @@ a:focus .border-line-3 {
   width: 6px;
 }
 
-a:hover .border-line-2,
-a:focus .border-line-2,
-a:hover .border-line-4,
-a:focus .border-line-4 {
+span:hover .border-line-2,
+span:focus .border-line-2,
+span:hover .border-line-4,
+span:focus .border-line-4 {
   height: 100%;
 }
 
@@ -103,8 +103,8 @@ a:focus .border-line-4 {
   left: 0;
 }
 
-a:hover .border-line-1,
-a:focus .border-line-1 {
+span:hover .border-line-1,
+span:focus .border-line-1 {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
@@ -114,8 +114,8 @@ a:focus .border-line-1 {
   right: 0;
 }
 
-a:hover .border-line-2,
-a:focus .border-line-2 {
+span:hover .border-line-2,
+span:focus .border-line-2 {
   -webkit-transition-delay: .4s;
           transition-delay: .4s;
 }
@@ -125,8 +125,8 @@ a:focus .border-line-2 {
   right: 0;
 }
 
-a:hover .border-line-3,
-a:focus .border-line-3 {
+span:hover .border-line-3,
+span:focus .border-line-3 {
   -webkit-transition-delay: .8s;
           transition-delay: .8s;
 }
@@ -136,8 +136,8 @@ a:focus .border-line-3 {
   bottom: 0;
 }
 
-a:hover .border-line-4,
-a:focus .border-line-4 {
+span:hover .border-line-4,
+span:focus .border-line-4 {
   -webkit-transition-delay: 1.2s;
           transition-delay: 1.2s;
 }
