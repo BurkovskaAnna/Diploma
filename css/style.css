@@ -1106,7 +1106,7 @@ cursor: pointer;
 //           transition: width ease-out .4s;
 // }
 
-.sp__blog-left span {
+.sp__blog-left a {
   display: block;
   position: absolute;
   top: 0;
@@ -1116,8 +1116,8 @@ cursor: pointer;
   z-index: 2;
 }
 
-.sp__blog-left span:hover,
-.sp__blog-left span:focus {
+.sp__blog-left a:hover,
+.sp__blog-left a:focus {
   color: #58c934;
 }
 
@@ -1288,7 +1288,7 @@ cursor: pointer;
 //     border: 6px #58c934 solid;
 // }
 
-.sp__blog-right span {
+.sp__blog-right a {
   display: block;
   position: absolute;
   top: 0;
@@ -1298,8 +1298,8 @@ cursor: pointer;
   z-index: 2;
 }
 
-.sp__blog-right span:hover,
-.sp__blog-right span:focus {
+.sp__blog-right a:hover,
+.sp__blog-right a:focus {
   color: #58c934;
 }
 
