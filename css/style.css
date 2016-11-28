@@ -501,6 +501,7 @@ cursor: pointer;
     color: #000;
 }
 
+
 .projects__link::after {
     position: absolute;
     top: 5px;
@@ -512,6 +513,7 @@ cursor: pointer;
     border-left: 7px solid #58c934;
     border-bottom: 4px solid transparent;
 }
+
 
 .projects__img-top {
     float: left;
@@ -1637,8 +1639,8 @@ textarea {
         width: 49%;
     }
     .bar-text {
-        width: 47%;
-        left: 14%;
+        width: 49%;
+        left: 11%;
     }
 
 }
@@ -1662,6 +1664,11 @@ textarea {
     }
     .sp-item span {
         left: 4%;
+    }
+
+    .bar-text {
+        width: 49%;
+        left: 11%;
     }
 
 }
