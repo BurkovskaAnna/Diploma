@@ -1177,7 +1177,20 @@ fieldset {
     height: 30px;
     font-size: 14px;
     padding: 0;
+    // transition:0.2s ease all; 
+    // -moz-transition:0.2s ease all; 
+    // -webkit-transition:0.2s ease all;
 }
+#first_name:focus,
+#email:focus,
+textarea:focus {
+    outline: none;
+    border-color: #000;  
+     transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
 .fff {
     height: 30px;
 }
@@ -1192,17 +1205,17 @@ input:focus ~ .bar:before, input:focus ~ .bar:after,
 textarea:focus ~ .bar-text:before, textarea:focus ~ .bar-text:after {
   width:100%;
 } 
-.bar:before, .bar:after {
-  content:'';
-  height: 2px; 
-  width: 0;
-  bottom: 0; 
-  position:absolute;
-  background: #000; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
-}
+// .bar:before, .bar:after {
+//   content:'';
+//   height: 2px; 
+//   width: 0;
+//   bottom: 0; 
+//   position:absolute;
+//   background: #000; 
+//   transition:0.2s ease all; 
+//   -moz-transition:0.2s ease all; 
+//   -webkit-transition:0.2s ease all;
+// }
 
 .form__input {
     font-family: 'Roboto', sans-serif;
@@ -1240,18 +1253,21 @@ textarea {
     left: 9%;
 }
 
-.bar-text:before, .bar-text:after {
-    content:'';
-    height: 2px; 
-    width:0;
-    bottom: 3px; 
-    position:absolute;
-    background: #000; 
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
+
+
+
+// .bar-text:before, .bar-text:after {
+//     content:'';
+//     height: 2px; 
+//     width:0;
+//     bottom: 3px; 
+//     position:absolute;
+//     background: #000; 
+//     transition:0.2s ease all; 
+//     -moz-transition:0.2s ease all; 
+//     -webkit-transition:0.2s ease all;
     
-}
+// }
 
 
 .form-btn,
